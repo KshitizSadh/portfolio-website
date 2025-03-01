@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hack&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hack', monospace;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+p{
+    display: flexbox;
+    
+}
+
+/* Navigation Bar */
+nav {
+    background: #111;
+    padding: 15px;
+    position: fixed;  
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;  
+    gap: 20px;
+    padding-right: 30px; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    padding: 50px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Terminal text on the left */
+.terminal {
+    flex: 1;  
+    text-align: left;
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.prompt {
+    color: #ffcc00;
+}
+
+.highlight {
+    color: #ff6666;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background: #111;
+    color: #00ff00;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 5px;
+}
+
+.social-links a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+/* Contact Form */
+h1{ 
+    background-color: #30e730;
+    color: #111;
+    margin: 2px;
+    padding: 1px;
+    display: block;
+ 
+}
+form {
+    margin-top: 20px;
+    background: #111;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #00ff00;
+    opacity: 0.7;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00ff00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff00ff;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #00ff00;
+}
+
+th {
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+td {
+    font-family: 'Hack', monospace;
+}
+

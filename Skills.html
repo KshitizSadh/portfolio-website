@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Tools</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>
+                <p><span class="prompt">$</span>Skills</p>
+            </h2>
+            <ul>
+                <li>Cybersecurity</li>
+                <li>Web Development</li>
+                <li>Penetration Testing</li>
+                <li>Security Analysis</li>
+                <li>Vulnerability Analysis</li>
+                <li>Network Analysis</li>
+                <li>Digital Forensics</li>
+                <li>Linux</li>
+                <li>Git</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>
+                <p><span class="prompt">$</span>Tools</p>
+            </h2>
+            <ul>
+                <li class="tool">
+                    <img src="icons/metasploit.png" alt="Metasploit">
+                    Metasploit
+                </li>
+                <li class="tool">
+                    <img src="icons/Openvas.png" alt="OpenVAS">
+                    OpenVAS
+                </li>
+                <li class="tool">
+                    <img src="icons/burp suite.png" alt="Burp Suite">
+                    Burp Suite
+                </li>
+                <li class="tool">
+                    <img src="icons/hashcat.png" alt="Hashcat">
+                    Hashcat
+                </li>
+                <li class="tool">
+                    <img src="icons/john.png" alt="John the Ripper">
+                    John the Ripper
+                </li>
+                <li class="tool">
+                    <img src="icons/ftk.png" alt="FTK Imager">
+                    FTK Imager
+                </li>
+                <li class="tool">
+                    <img src="icons/wireshark.png" alt="wireshark">
+                    Wireshark
+                </li>
+                <li class="tool">
+                    <img src="icons/nmap.png" alt="nmap">
+                    nmap
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        background-color: black;
+        color: #00ff00;
+        font-family: 'Hack', monospace;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .section {
+        width: 45%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .tool {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .tool img {
+        width: 20px;
+        height: 20px;
+        filter: brightness(1) invert(1);
+        display: block;
+    }
+</style>
+
+</html>

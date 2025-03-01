@@ -1,0 +1,30 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.min.css');
+
+body {
+    background-color: #0d0d0d;
+    color: #33ff33;
+    font-family: 'Hack', monospace;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.terminal {
+    text-align: left;
+    font-size: 1.2rem;
+    white-space: pre-line;
+    max-width: 600px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    background: #33ff33;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
