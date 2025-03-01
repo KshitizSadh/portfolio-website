@@ -1,4 +1,3 @@
-```md
 # Cybersecurity Portfolio Website
 
 This is a cybersecurity-themed portfolio website built using HTML, CSS, and JavaScript.
